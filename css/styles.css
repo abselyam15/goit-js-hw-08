@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  list-style: none;
+  padding: 20px 250px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.modal {
+  width: 800px;
+  height: 600px;
+}
+
+#close {
+  cursor: pointer;
+  color: red;
+  padding: 0.2rem;
+}
+
+.close-btn{
+  position: absolute;
+  right: 0.1em;
+  top: -2.5em;
+}
+
+.gallery-image.hovered {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+  box-shadow: 1px 1px 45px 17px rgba(0,0,0,0.44);
+}
